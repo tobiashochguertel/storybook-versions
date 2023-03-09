@@ -3,5 +3,13 @@ module.exports = {
     "../stories/**/*.stories.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)",
   ],
-  addons: ["../preset.js", "@storybook/addon-essentials"],
+  addons: [
+    {
+      name: "../preset.js",
+      options: {
+        prefix: "template-react-component-library",
+      },
+    },
+    "@storybook/addon-essentials",
+  ],
 };
