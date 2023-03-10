@@ -19,6 +19,9 @@ interface TabContentProps {
   code: string;
 }
 
+console.log(process.env.STORYBOOK_DATA_KEY);
+console.log(process.env.EXAMPLE_VAR);
+
 export const TabContent: React.FC<TabContentProps> = ({ code }) => (
   <TabWrapper>
     <TabInner>

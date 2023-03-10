@@ -12,4 +12,12 @@ module.exports = {
     },
     "@storybook/addon-essentials",
   ],
+  /*
+   * 👇 The `config` argument contains all the other existing environment variables.
+   * Either configured in an `.env` file or configured on the command line.
+   */
+  env: (config) => ({
+    ...config,
+    EXAMPLE_VAR: "An environment variable configured in Storybook",
+  }),
 };
